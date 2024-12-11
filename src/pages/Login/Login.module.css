@@ -1,0 +1,370 @@
+/* .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+
+.form-container {
+  display: flex;
+  width: 80%;
+  max-width: 900px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-panel {
+  flex: 1;
+  padding: 30px;
+}
+
+.right-panel {
+  flex: 1;
+  background-color: #FFA500;
+  border-radius: 0 10px 10px 0;
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.icon {
+  font-size: 24px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.Inibutton {
+  width: 100%;
+  padding: 10px;
+  background-color: #FFA500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+btnLogin:hover {
+  background-color: #e69500;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+}
+
+.authError {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.registerBtn {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #FFA500;
+  border: 2px solid #FFA500;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.registerBtn:hover {
+  background-color: #FFA500;
+  color: white;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.popup p {
+  margin-bottom: 15px;
+}
+
+.popup button {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.popup button:hover {
+  background-color: #e53935;
+}
+
+.container.active .form-container {
+  transform: translateX(100%);
+} */
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #792020, #5f0000);
+  color: #fff;
+}
+/*5f0000*/
+/* Contenedor del formulario */
+.form-container {
+  display: flex;
+  width: 80%;
+  max-width: 900px;
+  height: 500px;
+  background: #fff;
+  color: #333;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* Panel izquierdo */
+.left-panel {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+.left-panel h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.left-panel input {
+  width: 80%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.left-panel input:focus {
+  border-color: #5f0000;
+  outline: none;
+}
+
+.left-panel .authError {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+/* Botón iniciar sesión */
+.Inibutton {
+  background-color: #5f0000;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+  width: 80%;
+  margin-top: 1rem;
+}
+
+.Inibutton:hover {
+  background-color: #5f0000;
+  transform: translateY(-2px);
+}
+
+/* Enlace ¿Olvidaste tu contraseña? */
+#forgot-password {
+  color: #5f0000;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+#forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Panel derecho */
+.right-panel {
+  flex: 1;
+  padding: 2rem;
+  background: linear-gradient(135deg,  #792020, #5f0000);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.5s ease-in-out; /* Transición suave */
+}
+
+.right-panel h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.right-panel p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.right-panel .registerBtn {
+  background: #fff;
+  color: #5f0000;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.right-panel .registerBtn:hover {
+  background: #f4f4f4;
+}
+
+/* Iconos sociales */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.social-icons .icon {
+  font-size: 1.5rem;
+  color: #5f0000;
+  background: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.social-icons .icon:hover {
+  background: #ddd;
+}
+
+/* Popup */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: 1000;
+  width: 300px;
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+.popup h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.popup p {
+  margin: 5px 0;
+}
+
+.popup input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+.popup button {
+  background-color: #5f0000;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.popup button:hover {
+  background-color: #d38725;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Animaciones */
+
+/* Animación */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  to {
+      opacity: 0;
+      transform: translateY(-20%);
+  }
+}

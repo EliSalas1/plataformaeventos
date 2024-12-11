@@ -1,0 +1,281 @@
+/* Contenedor de botones para meses */
+/* .month-container {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+} */
+
+
+
+/* Botones de meses */
+.month-button {
+    background-color: #f68e39;
+    color: white;
+    border: none;
+    margin: 5px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.month-button:hover {
+    background-color: #e4751a;
+}
+
+/* Fondo de la tabla */
+.dataTable-container {
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f0f0f0; /* Color gris claro */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 100%; /* Más amplia */
+}
+
+/* Encabezados de la tabla */
+.dataTable th {
+    background-color: #00acc1;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Celdas de la tabla */
+.dataTable td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+/* Hover en las filas */
+.dataTable tbody tr:hover {
+    background-color: #b2ebf2;
+}
+
+/* Estilo de botones de opciones */
+.cyan-button {
+    background-color: #f68e39;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.cyan-button:hover {
+    background-color: #e4751a;
+}
+/* semaforo jiji */
+/* Estilos para el semáforo */
+.semaforo {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.semaforo.green {
+    background-color: green;
+}
+
+.semaforo.yellow {
+    background-color: yellow;
+}
+
+.semaforo.red {
+    background-color: red;
+}
+/* Estilos para el botón de seleccionar todo */
+.select-all-checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.select-all-checkbox:checked {
+    background-color: #4caf50; /* Color verde cuando está marcado */
+    border-color: #4caf50;
+}
+
+/* Estilos para los checkboxes de las filas */
+.row-checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.row-checkbox:checked {
+    background-color: #4caf50; /* Color verde cuando está marcado */
+    border-color: #4caf50;
+}
+
+/* Botón de seleccionar todo */
+button.select-all-button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button.select-all-button:hover {
+    background-color: #45a049;
+}
+
+/* Boton de Excel */
+
+.export-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 40px;
+    transition: background-color 0.3s ease;
+}
+
+.export-button:hover {
+    background-color: #45a049;
+}
+
+.excel-icon {
+    font-size: 1.5em; /* Tamaño del ícono */
+}
+/* icono de react */
+.custom-toast {
+    background-color: #fef2e2;
+    color: #d9534f;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px;
+}
+.custom-toast svg {
+    margin-right: 8px;
+}
+/* Contenedor del selector con ícono */
+.custom-select {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.custom-select select {
+    width: 100%;
+    padding: 10px 40px 10px 15px; /* Espacio para el ícono */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #fff;
+    appearance: none; /* Oculta el diseño por defecto */
+    -webkit-appearance: none; /* Safari */
+    -moz-appearance: none; /* Firefox */
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.custom-select select:focus {
+    outline: none;
+    border-color: #4caf50;
+}
+
+.select-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #4caf50;
+    font-size: 1.5em;
+    pointer-events: none;
+}
+
+
+/* selector de mes (año) */
+/* Contenedor del selector */
+.selector-container {
+    
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.selector-container h3 {
+    
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+.month-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Alinea verticalmente, si es necesario */
+    flex-direction: column; /* Asegura que los elementos estén en columna */
+}
+
+.month-container h3 {
+    margin: 0; /* Elimina márgenes predeterminados que puedan causar problemas */
+    text-align: center !important;
+}
+ /* para el titulo de la tabla */
+ .table-header {
+    text-align: center; /* Centra el contenido del contenedor */
+    margin: 10px 0; /* Espaciado opcional */
+}
+
+.table-header h3 {
+    margin: 0; /* Elimina márgenes que puedan desalinear el texto */
+}
+
+
+.selector-container select {
+    margin: 10px;
+    padding: 10px 20px;
+    background: rgb(235, 109, 37);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    /* width: 80%; */
+    padding: 10px;
+    font-size: 16px;
+    /* border: 1px solid #ccc; */
+    /* border-radius: 5px; */
+    /* background-color: #fffefe; */
+    /* color: #333; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+.selector-container select:focus {
+    border-color: #eec794;
+    outline: none;
+}
+
+/* Opciones */
+.selector-container option {
+    padding: 10px;
+}

@@ -1,0 +1,210 @@
+/* Personalización del contenedor */
+.custom-container {
+  max-width: 800px;
+  /* Ajusta el ancho máximo */
+  margin: 4% auto;
+  /* Centrado horizontal */
+  padding: 40px 20px;
+  /* Espaciado interior */
+  background-color: #f8f9fa;
+  /* Fondo claro */
+  border-radius: 15px;
+  /* Bordes redondeados */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Efectos de transición */
+}
+
+.custom-container:hover {
+  transform: scale(1.02);
+  /* Le da un pequeño aumento al pasar el mouse */
+  box-shadow: 0px 6px 15px rgba(177, 104, 21, 0.925);
+  /* Sombra más pronunciada al pasar el mouse */
+}
+
+.custom-container .search-bar {
+  margin: 0 auto;
+  /* Asegura que el buscador esté centrado dentro del contenedor */
+}
+
+/* Botón de descarga personalizado */
+.download-btn {
+  text-align: center;
+  padding: 20px 50px;
+  border-radius: 10px;
+  background-color: #800020;
+  /* Color vino */
+  color: white;
+  /* Texto en blanco */
+  border: none;
+  /* Sin borde */
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  margin-top: 20px;
+  /* Margen superior */
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  background-color: #b03060;
+  /* Color vino más claro en hover */
+}
+
+.download-btn:active {
+  background-color: #9c324b;
+  /* Color vino aún más claro cuando se hace clic */
+  transform: translateY(0px);
+  /* Evita el cambio de tamaño al hacer clic */
+}
+
+
+/* Buscador */
+.search-bar {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  /* Alinear a la derecha */
+  align-items: center;
+  padding: 1%;
+  margin: 0 auto;
+  /* Ajustar margen derecho si es necesario */
+  transition: all 0.3s ease-in-out;
+  max-width: 400px;
+  /* Ajusta el tamaño máximo según sea necesario */
+}
+
+.search-bar .search-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ff7b00;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.search-bar.expanded .search-icon {
+  transform: rotate(90deg);
+  /* Gira el ícono cuando el buscador está abierto */
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.search-bar.expanded input {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+  .input-wrapper {
+    max-width: 90%;
+    /* Reduce el ancho en pantallas pequeñas */
+  }
+}
+
+
+.input-wrapper:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 10px 40px 10px 15px;
+  /* Espacio para el ícono a la derecha */
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s;
+}
+
+
+.input-wrapper input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.input-wrapper #search-icon {
+  position: absolute;
+  right: 15px;
+  /* Alinea el ícono a la derecha */
+  font-size: 1.2rem;
+  color: #aaa;
+  pointer-events: none;
+  /* Hace que el ícono no interfiera con el input */
+}
+
+/* Resultados */
+.results-list {
+  max-height: 250px;
+  overflow-y: auto;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+  padding: 5px 0;
+}
+
+.search-result {
+  padding: 10px 45px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-result:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+  transform: scale(1.02);
+}
+
+.search-result.active {
+  background-color: rgba(253, 150, 53, 0.233);
+  border-left: 4px solid rgb(230, 64, 53);
+}
+
+/* Previsualización */
+.card {
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  border-radius: 15px 15px 0 0;
+  background: linear-gradient(90deg, #f7a02f, #fd9a04);
+  text-align: center;
+  /* padding: 15px; */
+  color: white;
+}
+
+.card-body {
+  padding: 20px;
+  font-size: 0.95rem;
+}
+
+.card-body section {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-body h5 {
+  color: #ff8800;
+}
+
+
+
+.text {
+  color: #eee;
+  text-align: center;
+  margin-bottom: 20px;
+}

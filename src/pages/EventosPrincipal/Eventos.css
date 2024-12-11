@@ -1,0 +1,185 @@
+/* Modulo 2 jiji  */
+.mainEventoP {
+  position: absolute;
+  top: 100px;
+  width: calc(100% - 260px);
+  left: 260px;
+  min-height: calc(100vh - 60px);
+  overflow: hidden;
+  /* Esto evitará el desbordamiento de contenido en caso de que los contenedores se expandan de más */
+}
+
+.cards {
+  margin: 3%;
+  width: 95%;
+  padding: 35px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  /* aqui podemos cambiarle el nombre para  que el card solo tome este por separado jijij */
+}
+
+.cards .card {
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-repeat: 10px;
+  border-radius: 10px;
+  box-shadow: 0 7px 25px 0 rgba(0, 0, 0, 0.08);
+}
+
+.number {
+  font-size: 35px;
+  font-weight: 500;
+  color: #235
+}
+
+.card-name {
+  color: #235;
+  font-weight: 600;
+}
+
+.icon-box i {
+  font-size: 45px;
+  color: #282e50;
+}
+
+/* Estos son cuadritos de las graficas jiji*/
+.charts {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+  width: 100%;
+  /* cambie el 20% por el 0 */
+  padding: 0px;
+  padding-top: 0;
+}
+
+.chart {
+  background: #eeecf9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  /* Ajustado al 100% para evitar crecimiento innecesario */
+  max-width: 100%;
+  /* Asegura que no se expanda más allá del contenedor */
+  box-sizing: border-box;
+  /* Esto asegura que el padding no agregue más tamaño */
+  overflow: hidden;
+  /* Evita que el contenido dentro del chart crezca más allá de sus límites */
+}
+
+/*Responsividad de la vista EventosPrincipal EN PROCESO*/
+@media (max-width: 1200px) {
+  .caja-contenido .col-9 {
+    left: 60px;
+    width: calc(100% - 60px);
+  }
+}
+
+@media (max-width: 880px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .charts {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainEventoP {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .charts {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .cards {
+    padding: 10px;
+  }
+
+  .charts {
+    padding: 10px;
+  }
+}
+
+.mes-actual {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* carousel */
+.carousel {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.carousel-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 7px 25px 0 rgba(0, 0, 0, 0.08);
+}
+
+.carousel-controls button {
+  margin: 10px;
+  padding: 10px 20px;
+  background: #235;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.carousel-controls button:hover {
+  background: #282e50;
+}
+
+.event-count {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #ff671f;
+  /* Ajusta el color según tu diseño */
+  font-weight: bold;
+}
+
+
+.carousel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.carousel-header h3 {
+  margin: 0;
+}
+
+.month-selector {
+  margin: 10px;
+  padding: 10px 20px;
+  background: #235;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,256 @@
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+h2 {
+  color: #8A2B3B; /* Vino */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el ícono o imagen de persona */
+.header-icon {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-icon {
+  font-size: 60px; /* Tamaño grande para el ícono */
+  color: #8A2B3B; /* Vino */
+}
+
+/* Si prefieres usar una imagen */
+.user-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Fondo degradado en la parte inferior */
+.footer-gradient {
+  position: relative;
+  height: 10px; /* Ajusta según tu diseño */
+  background:#f78502; /* Degradado de ejemplo */
+  /* background: linear-gradient(to top, #ff8800, transparent);  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 10px; /* Ajusta para visibilidad */
+}
+
+/* Campos de formulario */
+.campo {
+  margin-bottom: 15px;
+}
+
+.campo label {
+  color: #000000; /* Naranja */
+  display: block;
+  font-size: 14px;
+}
+
+.campo input, .campo select, .campo textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.campo textarea {
+  resize: vertical;
+}
+
+.btn {
+  background-color: #8A2B3B; /* Vino */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.btn .icon {
+  color: #f7f5f5; /* Cambia este color al que desees */
+  font-size: 20px; /* Tamaño del ícono */
+}
+
+.btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.enviar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.enviar svg {
+  color: #F29C11; /* Naranja */
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.enviar input[type="submit"] {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+btn-verde {
+  background-color: #28a745; /* Verde */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn-verde:hover {
+  background-color: #218838; /* Verde oscuro al pasar el ratón */
+}
+
+.btn-verde:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+/* Botón Azul (para "Guardar Cambios") */
+.btn-azul {
+  background-color: #8A2B3B; /* Azul */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn-azul:hover {
+  background-color: #63b8da; /* Verde oscuro al pasar el ratón */
+}
+
+.btn-azul:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Botón Rojo (para "Borrar") */
+.btn-rojo {
+  background-color: #8A2B3B; /* Azul */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn-rojo:hover {
+  background-color: #ec4d42; /* Verde oscuro al pasar el ratón */
+}
+
+.btn-rojo:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* notificaciones */
+.notificacion {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.notificacion.exito {
+  border-left: 5px solid #4caf50;
+}
+
+.notificacion.error {
+  border-left: 5px solid #f44336;
+}
+
+.icono-notificacion {
+  font-size: 20px;
+}
+
+.icono-notificacion {
+  margin-right: 10px;
+  font-size: 20px;
+}
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+/* //simulación */
+.alert-success {
+  border: 1px solid green;
+  background-color: #e0f7e0;
+  color: #2d662d;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+}
+/* //para la barra de loadng */
+.loading-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente */
+  color: white; /* Texto blanco */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  z-index: 1000;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
